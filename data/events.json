@@ -1,0 +1,48 @@
+[
+  {
+    "op": "forward",
+    "graph": "g0",
+    "revision": 1,
+    "max_actions": 100,
+    "inverse_risk_limit": 100
+  },
+  {
+    "op": "forward",
+    "graph": "g1",
+    "revision": 1,
+    "max_actions": 100,
+    "inverse_risk_limit": 100
+  },
+  {
+    "op": "backward",
+    "graph": "g0",
+    "max_actions": 1,
+    "inverse_risk_limit": 0.1
+  },
+  {
+    "op": "revise_graph",
+    "graph": "g0",
+    "revision": 2
+  },
+  {
+    "op": "forward",
+    "graph": "g0",
+    "revision": 2,
+    "max_actions": 100,
+    "inverse_risk_limit": 100
+  },
+  {
+    "op": "backward",
+    "graph": "g1",
+    "max_actions": 100,
+    "inverse_risk_limit": 100
+  },
+  {
+    "op": "propose_update",
+    "candidate": "high-gain"
+  },
+  {
+    "op": "propose_update",
+    "candidate": "gentle"
+  }
+]
